@@ -25,8 +25,8 @@ function addNewItem (e){
     if( input.value === ''){
         alert('Lütfen Değer giriniz.');
     }
-    // Create li
-    const li = document.createElement ('li');
+    else {
+        const li = document.createElement ('li');
     li.className='listGruopİtem';
     li.appendChild(document.createTextNode(input.value));
 
@@ -47,6 +47,10 @@ function addNewItem (e){
     //clear input 
     input.value='';
 
+
+    }
+    // Create li
+    
 e.preventDefault();
 };
 // dalete item
