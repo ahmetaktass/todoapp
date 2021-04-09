@@ -11,12 +11,14 @@ function eventListeners (){
     form.addEventListener('submit', addNewItem);
 };
 
-//delete an item 
+//delete an item event
 taskList.addEventListener('click', deleteItem);
 
 //delete all event 
 btnDeleteAll.addEventListener('click' ,deleteAll);
 
+// input clear event
+input.addEventListener(key)
 
 
 // add new item
@@ -44,7 +46,8 @@ function addNewItem (e){
     taskList.appendChild(li);
 
 
-    console.log(li);
+    //clear input 
+    input.value='';
 
 e.preventDefault();
 };
@@ -72,8 +75,13 @@ if(confirm('Hepsini silmek istediğinizden emin misiniz?')){
    
     taskList.innerHTML='';
 };
-
-
+// 2.yontem
+/* taskList.childNodes.forEach(function(item){
+    if(item.nodeType ===1){
+        item.remove();
+    }
+});
+ */
 e.preventDefault();
 };
 
