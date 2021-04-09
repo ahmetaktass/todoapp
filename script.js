@@ -17,8 +17,6 @@ taskList.addEventListener('click', deleteItem);
 //delete all event 
 btnDeleteAll.addEventListener('click' ,deleteAll);
 
-// input clear event
-input.addEventListener(key)
 
 
 // add new item
