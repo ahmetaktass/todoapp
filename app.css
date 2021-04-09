@@ -16,6 +16,9 @@ form {
     text-align: center;
     align-items: center;
 }
+.card-header {
+    border: none;
+}
 
 .taskGroup{
    margin-top: 10px;
